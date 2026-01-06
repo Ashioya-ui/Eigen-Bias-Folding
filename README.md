@@ -51,11 +51,15 @@ model.generate("Explain the tort of negligence.")
 📐 The Math (Why Output Projection?)
 
 Most steering methods inject vectors at the input of a layer (gate_proj). However, the MLP block contains non-linearities ($\sigma$):
-$$ y = W_{down}(\sigma(W_{gate}(x + v))) $$
+
+$$y = W_{down}(\sigma(W_{gate}(x + v)))$$
+
 This distorts the manifold non-linearly.
 
 EBF targets the Output Projection:
-$$ y = W_{down}(\dots) + b_{down} + v $$
+
+$$y = W_{down}(\dots) + b_{down} + v$$
+
 This is mathematically identical to adding a residual vector ($x_{l+1} = x_l + MLP(x_l) + v$), but incurs no runtime cost because $v$ is pre-added to $b_{down}$.
 
 🛡️ Safety & Audits
