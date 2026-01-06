@@ -14,8 +14,8 @@ Kernel-Aware Safety: Built-in guardrails prevent silent failures on quantized (B
 
 📦 Installation
 
-git clone [https://github.com/adaptation-labs/ebf.git](https://github.com/adaptation-labs/ebf.git)
-cd ebf
+git clone [https://github.com/Ashioya-ui/Eigen-Bias-Folding.git](https://github.com/Ashioya-ui/Eigen-Bias-Folding.git)
+cd Eigen-Bias-Folding
 pip install -e .
 
 
