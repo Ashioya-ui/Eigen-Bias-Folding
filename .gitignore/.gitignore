@@ -1,0 +1,1 @@
+pycache/ *.pyc *.egg-info/ dist/ build/ .pytest_cache/ .coverage *.ebf *.pt venv/
